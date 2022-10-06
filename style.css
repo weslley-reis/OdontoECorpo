@@ -1,0 +1,132 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+
+header {
+  background-color: aliceblue;
+  height: 15vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo > img {
+  height: 10vh;
+  width: 10vw;
+}
+
+/* Primeira seção */
+.headline {
+  display: flex;
+  justify-content: space-around;
+  background-color: aliceblue;
+  margin: 1em;
+}
+
+.headline > .img img {
+  width: 60vw;
+  height: 85vh;
+}
+
+.headline > form {
+  width: 30vw;
+  height: 80vh;
+  padding: 2em;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.headline > form > h2 {
+  text-align: center;
+}
+
+.headline > form > input {
+  margin: 2vh auto;
+  width: 80%;
+  height: 5vh;
+}
+
+/* Tratamentos */
+
+.tratamentos {
+  background-color: yellow;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+}
+
+.tratamentos > div h1 {
+  background-color: red;
+  text-align: center;
+}
+
+.card-tratamentos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card-tratamentos > div {
+  width: 15vw;
+  height: 30vh;
+  border: 4px solid black;
+}
+
+.prova-social {
+  text-align: center;
+  background-color: blue;
+}
+
+.prova-social > .card-social {
+  background-color: antiquewhite;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-social > div {
+  width: 20vw;
+}
+
+.card-social > div > p {
+  border: solid 1px black;
+  background-color: burlywood;
+}
+
+.depoimentos {
+  text-align: center;
+}
+
+.card-depoimento {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.quem-somos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.quem-somos > div img {
+  height: 100vh;
+  width: 50vw;
+}
+
+.text-qs {
+  /* background-color: aqua; */
+  width: 40vw;
+  height: 30vh;
+}
