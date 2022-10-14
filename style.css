@@ -6,23 +6,45 @@
 }
 
 body {
-  width: 95vw;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
   margin: 0 auto;
   /* background: url("./img/plano\ 1.jpg"); */
   overflow-x: hidden;
+  background: rgb(246, 246, 246);
+  background: linear-gradient(
+    180deg,
+    rgba(246, 246, 246, 1) 0%,
+    rgba(255, 255, 255, 1) 30%,
+    rgba(211, 240, 248, 1) 100%
+  );
+}
+
+h1,
+h2,
+h3 {
+  font-family: arial;
+  color: #a6a6a6;
+}
+
+p {
+  font-family: arial;
+  color: #a6a6a6;
 }
 
 /* Header */
 
 header {
   height: 10vh;
-  background-color: white;
+
+  /* background-color: white; */
   margin: 1vh 0 1vw 0;
   border-radius: 0.6em;
 }
 
 nav {
   display: flex;
+  margin: 0 1em;
   justify-content: space-between;
 }
 
@@ -35,54 +57,88 @@ nav {
   width: 20vw;
 }
 
+.btnagendar {
+  width: 20vw;
+  border: none;
+}
+
+.btnagendar > button {
+  background-color: rgb(37, 211, 102);
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+  font-size: 1em;
+  margin: 2vh auto;
+  width: 100%;
+  height: 7vh;
+  border: none;
+  border-radius: 1em;
+}
+
 /* Primeira seção */
 .headline {
-  /* display: flex; */
-  height: 80vh;
-  /* width: 95vw;
-  margin: 0 auto; */
-  /* justify-content: space-around; */
+  /* margin: 0 auto 5vh auto; */
+  margin: 0 auto;
+  height: 100vh;
+  /* width: 95vw; */
   background-image: url("./img/page\ 1\ -\ ext.png");
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 .headline > form {
-  width: 20vw;
-  height: 50vh;
+  width: 30vw;
+  height: 60vh;
   text-align: center;
   padding: 2em;
   background-color: white;
   position: relative;
-  top: 15vh;
-  bottom: 20vh;
-  left: 70vw;
+  top: 25vh;
+  /* bottom: 60vh; */
+  left: 68vw;
   border-radius: 2em;
+}
+
+.headline > form > h2 {
+  margin-bottom: 2vh;
+  letter-spacing: 0.1em;
 }
 
 .headline > form > input {
   margin: 2vh auto;
   width: 80%;
   height: 5vh;
+  border-radius: 0.5em;
 }
 
+.headline > form > button {
+  background-color: rgb(37, 211, 102);
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+  font-size: 1.3em;
+  margin: 2vh auto;
+  width: 80%;
+  height: 10vh;
+  border: none;
+  border-radius: 2em;
+}
 /* Tratamentos */
 
 .tratamentos {
-  /* background: url("./img/plano\ 1.jpg"); */
-  /* background-color: yellow; */
   height: 100vh;
-  /* display: flex;
-  flex-direction: column;
-  padding: 2em; */
 }
 
-.tratamentos > div h1 {
+.tratamentos > div h2 {
   /* background-color: red; */
+  letter-spacing: 0.3em;
+  font-weight: bolder;
+  font-size: 2em;
   text-align: center;
+  padding: 1em;
 }
 
 .card-tratamentos {
-  height: 90vh;
+  height: 100vh;
+  width: 95vw;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -91,7 +147,8 @@ nav {
 .card-tratamentos > div {
   width: 20vw;
   height: 80vh;
-  border: 1px solid black;
+  box-shadow: 10px 2.5px 10px #e0e0e0;
+  border-radius: 0.5em;
 }
 
 .bucal {
@@ -114,35 +171,57 @@ nav {
   background-size: 100% 100%;
 }
 
+/************Prova Social************/
+
 .prova-social {
+  width: 95vw;
+  margin: 1em auto;
+  /* border: 1px inset black; */
+  border-radius: 1em;
+  background-color: rgba(211, 240, 248, 0.15);
+  padding: 4vh 1vw;
+  box-shadow: 10px 5px 10px 10px #e0e0e0;
+}
+
+.prova-social > h2 {
   text-align: center;
-  /* background-color: blue; */
+  letter-spacing: 0.2em;
+  font-weight: bolder;
+  font-size: 2em;
+  text-align: center;
+  /* padding: 0.5em; */
 }
 
 .prova-social > .card-social {
-  /* background-color: antiquewhite; */
-  /* width: 100vw; */
-  height: 50vh;
+  /* background-color: yellow; */
+  height: 100vh;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+}
+
+.card-social > div {
+  width: 30%;
+  height: 80%;
+  border-radius: 1.3em;
 }
 
 .card-social > div:nth-of-type(1) {
-  width: 25vw;
-  background: url("/img/Clareamento/Clareamento.jpeg");
+  background: url("./img/Tratamentos/aparelho.png");
   background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .card-social > div:nth-of-type(2) {
-  width: 25vw;
-  background: url("/img/Clareamento/Clareamento\ e\ Faceta.jpeg");
+  background: url("./img/Tratamentos/clareamento.png");
   background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .card-social > div:nth-of-type(3) {
-  width: 25vw;
-  background: url("/img/Clareamento/Protese\ Imediata.jpeg");
+  background: url("./img/Tratamentos/porcelana.png");
   background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 /* 
@@ -154,22 +233,38 @@ nav {
 /************Depoimentos ************/
 .depoimentos {
   text-align: center;
+  padding: 1em;
+  height: 100vh;
+  /* background-color: pink; */
+}
+
+.depoimentos > h2 {
+  text-align: center;
+  letter-spacing: 0.2em;
+  font-weight: bolder;
+  font-size: 2em;
+  padding: 1em;
 }
 
 .card-depoimento {
-  width: 100%;
-  height: 100vh;
-  display: flex;
+  margin: 0 auto;
+  width: 55%;
+  height: 70vh;
+  /* background-image: url("./img/Depoimentos/Depoimento\ 1.JPG"); */
+  background-size: 100% 100%;
+  border-radius: 2em;
+  /* display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-between; */
 }
 
 .card-depoimento > div {
-  width: 32%;
-  height: 40%;
+  width: 35vw;
+  height: 14vw;
+  margin: 0 auto;
 }
 
-.card-depoimento > div:nth-of-type(1) {
+/* .card-depoimento > div:nth-of-type(1) {
   background-image: url("./img/Depoimentos/Depoimento\ 1.JPG");
   background-size: 100% 100%;
 }
@@ -197,6 +292,18 @@ nav {
 .card-depoimento > div:nth-of-type(6) {
   background-image: url("./img/Depoimentos/Depoimento\ 6.JPG");
   background-size: 100% 100%;
+} */
+
+.depoimentos > button {
+  background-color: rgb(37, 211, 102);
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+  font-size: 1em;
+  margin: 4vh auto;
+  width: 50%;
+  height: 7vh;
+  border: none;
+  border-radius: 1em;
 }
 
 /************ Quem somos ************/
@@ -204,19 +311,31 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin: 0 auto;
   height: 100vh;
-  width: 100%;
+  width: 95vw;
+  /* background-color: pink; */
 }
 
-.quem-somos > div img {
+.quem-somos > div > img {
   height: 80vh;
-  width: 50vw;
+  width: 53vw;
+  border-radius: 1.5em;
+  box-shadow: 10px 10px 20px 10px rgba(205, 235, 240, 1);
+}
+
+.text-qs {
+  width: 37vw;
 }
 
 /************ Perguntas Frequentes ************/
 .faq {
-  width: 100%;
-  margin: auto;
+  width: 95vw;
+  margin: 0 auto;
+}
+
+.faq > h2 {
+  letter-spacing: 0.3em;
 }
 
 .faq-item {
@@ -258,15 +377,56 @@ nav {
 }
 
 /************ Maps ************/
+
+.local {
+  text-align: center;
+  padding: 1em;
+  border-radius: 1.3em;
+  box-shadow: 10px 10px 20px 10px #e0e0e0;
+  width: 95vw;
+  margin: 2em auto;
+}
+
 .maps {
   height: 80vh;
   width: 100%;
   margin: 0 auto;
+  padding: 1em;
 }
 
 /************ Rodapé ************/
 footer {
+  padding: 2vh 0;
   width: 100%;
   height: 40vh;
-  background-color: aquamarine;
+  border: 3px solid #a6a6a6;
+  background-color: #d3effd;
+  /* background-color: aquamarine; */
+}
+
+footer > div {
+  width: 95vw;
+  /* background-color: blanchedalmond; */
+  text-align: center;
+  margin: 0 auto;
+}
+
+footer > div > .logo-rodape {
+  height: 20vh;
+  width: 40vw;
+}
+
+footer > div > img {
+  height: 5vh;
+  width: 5vh;
+}
+
+.direitos {
+  display: flex;
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #a6a6a6;
+  /* border: 0.3em solid #a6a6a6; */
+  /* padding: 2em 0; */
+  justify-content: space-between;
 }
