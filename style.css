@@ -25,6 +25,7 @@ h2,
 h3 {
   font-family: arial;
   color: #a6a6a6;
+  text-shadow: 1px 2px #a2a2a2;
 }
 
 p {
@@ -32,14 +33,24 @@ p {
   color: #a6a6a6;
 }
 
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 2px 4px 1px #a2a2a2;
+}
+
 /* Header */
 
 header {
   height: 10vh;
-
+  /* width: 98vw; */
   /* background-color: white; */
-  margin: 1vh 0 1vw 0;
+  margin: 1vh auto 2vh auto;
   border-radius: 0.6em;
+  box-shadow: 2.5px 2.5px 5px 3px #e0e0e0;
 }
 
 nav {
@@ -68,7 +79,7 @@ nav {
   font-weight: bold;
   font-size: 1em;
   margin: 2vh auto;
-  width: 100%;
+  width: 98%;
   height: 7vh;
   border: none;
   border-radius: 1em;
@@ -235,6 +246,12 @@ nav {
   text-align: center;
   padding: 1em;
   height: 100vh;
+  width: 95%;
+  margin: 0 auto;
+  background-color: #effdff;
+  border-top: 0.3em solid #e6e6e6;
+  box-shadow: 3px 5px 10px 10px #e0e0e0;
+  border-radius: 1.5em;
   /* background-color: pink; */
 }
 
@@ -243,7 +260,7 @@ nav {
   letter-spacing: 0.2em;
   font-weight: bolder;
   font-size: 2em;
-  padding: 1em;
+  padding: 0.5em;
 }
 
 .card-depoimento {
@@ -264,43 +281,13 @@ nav {
   margin: 0 auto;
 }
 
-/* .card-depoimento > div:nth-of-type(1) {
-  background-image: url("./img/Depoimentos/Depoimento\ 1.JPG");
-  background-size: 100% 100%;
-}
-
-.card-depoimento > div:nth-of-type(2) {
-  background-image: url("./img/Depoimentos/Depoimento\ 2.JPG");
-  background-size: 100% 100%;
-}
-
-.card-depoimento > div:nth-of-type(3) {
-  background-image: url("./img/Depoimentos/Depoimento\ 3.JPG");
-  background-size: 100% 100%;
-}
-
-.card-depoimento > div:nth-of-type(4) {
-  background-image: url("./img/Depoimentos/Depoimento\ 4.JPG");
-  background-size: 100% 100%;
-}
-
-.card-depoimento > div:nth-of-type(5) {
-  background-image: url("./img/Depoimentos/Depoimento\ 5.JPG");
-  background-size: 100% 100%;
-}
-
-.card-depoimento > div:nth-of-type(6) {
-  background-image: url("./img/Depoimentos/Depoimento\ 6.JPG");
-  background-size: 100% 100%;
-} */
-
 .depoimentos > button {
   background-color: rgb(37, 211, 102);
   color: rgba(255, 255, 255, 1);
   font-weight: bold;
   font-size: 1em;
   margin: 4vh auto;
-  width: 50%;
+  width: 55%;
   height: 7vh;
   border: none;
   border-radius: 1em;
@@ -312,8 +299,10 @@ nav {
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
-  height: 100vh;
+  height: 98vh;
   width: 95vw;
+  border-top: 0.1em solid #d6d6d6;
+  border-bottom: 0.1em solid #d6d6d6;
   /* background-color: pink; */
 }
 
@@ -321,15 +310,20 @@ nav {
   height: 80vh;
   width: 53vw;
   border-radius: 1.5em;
-  box-shadow: 10px 10px 20px 10px rgba(205, 235, 240, 1);
+  box-shadow: 10px 10px 20px 10px rgba(190, 225, 230, 1);
 }
 
 .text-qs {
   width: 37vw;
+  background-color: rgba(228, 245, 250, 0.3);
+  padding: 5vh 3vw;
+  border-radius: 1.5em;
+  box-shadow: 10px 10px 20px 10px rgba(190, 225, 230, 1);
 }
 
 /************ Perguntas Frequentes ************/
 .faq {
+  padding: 4vh 0 2vh 0;
   width: 95vw;
   margin: 0 auto;
 }
@@ -345,6 +339,11 @@ nav {
 .question-item {
   text-decoration: none;
   color: hsl(237, 12%, 33%);
+}
+
+.faq-item:hover {
+  padding-bottom: 0.5em;
+  font-weight: bold;
 }
 /* 
 .question-item:after {
@@ -399,7 +398,8 @@ footer {
   padding: 2vh 0;
   width: 100%;
   height: 40vh;
-  border: 3px solid #a6a6a6;
+  /* border: 3px solid #a6a6a6; */
+  box-shadow: 2.5px 5px 20px 3px #a6a6a6;
   background-color: #d3effd;
   /* background-color: aquamarine; */
 }
@@ -422,11 +422,11 @@ footer > div > img {
 }
 
 .direitos {
-  display: flex;
+  /* display: flex; */
   font-size: 0.8em;
   font-weight: 600;
   color: #a6a6a6;
   /* border: 0.3em solid #a6a6a6; */
   /* padding: 2em 0; */
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }

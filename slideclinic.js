@@ -5,7 +5,7 @@ var arrClinic = [
   "./img/Clinica/consultório 4.jpeg",
 ];
 var cardClinic = document.getElementById("clinic");
-var interval = 2000;
+var interval = 3000;
 
 function slideclinic1() {
   cardClinic.src = arrClinic[0];
@@ -24,5 +24,5 @@ function slideclinic3() {
 
 function slideclinic4() {
   cardClinic.src = arrClinic[3];
-  setTimeout("slideclinic5()", interval);
+  setTimeout("slideclinic1()", interval);
 }
