@@ -1,15 +1,15 @@
 var card = document.getElementById("depoimento-slide");
 
 var arr = [
-  "url('./img/Depoimentos/Depoimento 1.JPG')",
-  "url('./img/Depoimentos/Depoimento 2.JPG')",
-  "url('./img/Depoimentos/Depoimento 3.JPG')",
-  "url('./img/Depoimentos/Depoimento 4.JPG')",
-  "url('./img/Depoimentos/Depoimento 5.JPG')",
-  "url('./img/Depoimentos/Depoimento 6.JPG')",
+  "url('./img/Depoimentos/Depoimento 1.jpg')",
+  "url('./img/Depoimentos/Depoimento 2.jpg')",
+  "url('./img/Depoimentos/Depoimento 3.jpg')",
+  "url('./img/Depoimentos/Depoimento 4.jpg')",
+  "url('./img/Depoimentos/Depoimento 5.jpg')",
+  "url('./img/Depoimentos/Depoimento 6.jpg')",
 ];
 
-var interval = 3000;
+var interval = 5000;
 
 function slide1() {
   card.style.backgroundImage = arr[0];
@@ -33,10 +33,5 @@ function slide4() {
 
 function slide5() {
   card.style.backgroundImage = arr[4];
-  setTimeout("slide6()", interval);
-}
-
-function slide6() {
-  card.style.backgroundImage = arr[5];
   setTimeout("slide1()", interval);
 }
