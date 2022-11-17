@@ -1,173 +1,257 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-bt">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Inserir favicon -->
-
     <title>Odonto e Corpo</title>
-
-    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
+    <script></script>
+    <link rel="stylesheet" href="style1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css"
+    />
   </head>
   <body onload="slideclinic1()">
     <main>
       <section class="headline">
-       <a href="https://api.whatsapp.com/send?phone=5511910544849&text=Ol%C3%A1,%20gostaria%20agendar%20uma%20avalia%C3%A7%C3%A3o" target="_blank"> 
-        <img class="img-btn" src="./img/WhatsApp-icone-3.png" alt="">  
-        <button class="button-geral" type="submit"> Agende agora com um especialista</button></a>
-            
-         
-    
-      </section>
-      
-      <section class="prova-social">
-        
-        <h1>TIPOS DE CLAREAMENTO</h1>
-        <div class="card-social">
-          <div></div>
-          <div>
-             <h3>CLAREAMENTO CONSULTÓRIO</h3> 
-            <div class="consultorio">
-              
-              <p>É a forma mais rápida e eficas no tratamento do clareamento dental. O dentista aplica um gel clareador altamente concentrado, trazendo resultados desde a primeira sessão. Porém, dependendo do caso, podem ser necessárias de 2 a 4 sessões.</p>
-            </div>
-            
-          </div>
-          <div>
-            <h3>CLAREAMENTO CASEIRO</h3>
-            <div class="caseiro">
-            <p>Este tipo de tratamento é feito com o auxílio de uma moldeira de silicone preenchida com um gel clareador e tem que ser aplicado todos os dias pelo período de três a quatro semanas ou de acordo com o recomendado pelo seu dentista.</p>
-            </div>
-          </div>
-          <div>
-            <h3>CLAREAMENTO MISTO</h3>
-            <div class="misto">
-            <p>É quando combinamos a técnica do clareamento caseiro supervisionado por um dentista com a técnica do clareamente de consultório. Uma parte do clareamento será feita em casa com o acompanhamento do dentista e outra será feita no consultório.</p>
-            </div>
-            
-          </div>
+        <div class="btn-headline">
+          <a
+            href="https://api.whatsapp.com/send?phone=5511910544849&text=Ol%C3%A1,%20gostaria%20agendar%20uma%20avalia%C3%A7%C3%A3o"
+            target="_blank"
+          >
+            <img
+              src="./img/botão 2.png"
+              alt="Botão Whatsapp"
+              class="img-btn-headline"
+            />
+          </a>
         </div>
-
       </section>
-
-      <section class="tratamentos">
-
-        <div><h2>OUTROS SERVIÇOS</h2></div>
-        <div class="card-tratamentos">
-          <div class="bucal">
-            <h3>APARELHO</h3>
-              
-            <div class="aparelho">
+      <section class="clareamento">
+        <h1>TIPOS DE CLAREAMENTO</h1>
+        <div class="card-clareamento">
+          <div class="img-antes-depois">
+            <img
+              src="./img/Clareamento/Antes e Depois.jpeg"
+              alt="Clareamento - Antes e Depois"
+            />
+          </div>
+          <div class="consultorio">
+            <h3>CLAREAMENTO CONSULTÓRIO</h3>
+            <div class="txt-consultorio">
               <p>
-                O aparelho ortodôntico, ou aparelho dentário, é utilizado para fazer o alinhamento dos destes quando eles se desenvolvem com uma má formação.
+                É a forma mais rápida no tratamento do clareamento dental. O
+                dentista aplica um gel clareador altamente concentrado, trazendo
+                resultados desde a primeira sessão. Porém, dependendo do caso,
+                podem ser necessárias de 2 a 4 sessões.
               </p>
             </div>
-            
           </div>
-          <div class="estetica">
+          <div class="caseiro">
+            <h3>CLAREAMENTO CASEIRO</h3>
+            <div class="txt-caseiro">
+              <p>
+                Este tipo de tratamento é feito com o auxílio de uma moldeira de
+                silicone, preenchida com um gel clareador e tem que ser aplicado
+                todos os dias, pelo período de três a quatro semanas ou de
+                acordo com a orientação do dentista.
+              </p>
+            </div>
+          </div>
+          <div class="misto">
+            <h3>CLAREAMENTO MISTO</h3>
+            <div>
+              <p>
+                É quando combinamos a técnica do clareamento caseiro,
+                supervisionado por um dentista com a técnica do clareamento de
+                consultório. Uma parte do clareamento será feita em casa, com o
+                acompanhamento do dentista e outra será feita no consultório.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="outros-servicos">
+        <h2>OUTROS SERVIÇOS</h2>
+        <div class="card-servicos">
+          <div class="aparelho">
+            <h3>APARELHO</h3>
+            <div class="txt-aparelho">
+              <p>
+                O aparelho ortodôntico, ou aparelho dentário, é utilizado para
+                fazer o alinhamento dos destes quando eles se desenvolvem com
+                uma má formação.
+              </p>
+            </div>
+          </div>
+          <div class="faceta">
             <h3>FACETA</h3>
             <p>
-              A Lente de Contato Dental é uma estrutura bem fina, produzia com material similar ao dente natural, porcelana. Ela é colada na face do dente, cobrindo falhas e irregularidades.
+              A Lente de Contato Dental é uma estrutura bem fina, produzia com
+              material similar ao dente natural, porcelana. Ela é colada na face
+              do dente, cobrindo falhas e irregularidades.
             </p>
           </div>
-          <div class="facial">
+          <div class="limpeza">
             <h3>LIMPEZA DENTAL</h3>
             <p>
-              A limpeza dentária, ou profilaxia, é a limpeza profunda e completa dos dentes, realizada por um especialista. Nesse procedimento removemos as placas bacterianas e o tártaro presente nos dentes.
+              A limpeza dentária, ou profilaxia, é a limpeza profunda e completa
+              dos dentes, realizada por um especialista. Nesse procedimento
+              removemos as placas bacterianas e o tártaro presente nos dentes.
             </p>
           </div>
-          <div class="procedimentos">
+          <div class="implante">
             <h3>IMPLANTE DENTÁRIO</h3>
             <p>
-              O implante dentário é o tratamento ideal para restaurar seu sorriso, repor um ou mais dentes naturais perdidos
+              O implante dentário é o tratamento ideal para restaurar seu
+              sorriso, repor um ou mais dentes naturais perdidos
             </p>
           </div>
-        </div> 
-
-      </section>
-      
-      <section class="depoimentos">
-
-        <h2>O QUE FALAM SOBRE NÓS</h2>
-        <div  class="card-depoimento" id="depoimento-slide" >
-         <img src="./img/Depoimentos/Depoimento 2.JPG" alt="">
-         <img src="./img/Depoimentos/Depoimento 1.JPG" alt="">
-         <img src="./img/Depoimentos/Depoimento 3.JPG" alt="">
-         <img src="./img/Depoimentos/Depoimento 4.JPG" alt="">
-         <img src="./img/Depoimentos/Depoimento 5.JPG" alt="">
-         <img src="./img/Depoimentos/Depoimento 6.JPG" alt="">       
         </div>
-        <a href="https://api.whatsapp.com/send?phone=5511910544849&text=Ol%C3%A1,%20gostaria%20agendar%20uma%20avalia%C3%A7%C3%A3o" target="_blank"> 
-          <img class="img-btn-dep" src="./img/WhatsApp-icone-3.png" alt="">  
-          <button class="button-dep" type="submit"> Agende agora com um especialista</button></a>
-              
-           
-      
       </section>
-     
+
+      <section class="depoimentos">
+        <h2>O QUE FALAM SOBRE NÓS</h2>
+        <div class="card-depoimento">
+          <img src="./img/Depoimentos/Depoimento 1.JPG" alt="Depoimentos" />
+          <img src="./img/Depoimentos/Depoimento 3.JPG" alt="Depoimentos" />
+          <img src="./img/Depoimentos/Depoimento 4.JPG" alt="Depoimentos" />
+          <img src="./img/Depoimentos/Depoimento 5.JPG" alt="Depoimentos" />
+          <img src="./img/Depoimentos/Depoimento 6.JPG" alt="Depoimentos" />
+          <img src="./img/Depoimentos/Depoimento 2.JPG" alt="Depoimentos" />
+        </div>
+
+        <div class="btn-depoimento">
+          <a
+            href="https://api.whatsapp.com/send?phone=5511910544849&text=Ol%C3%A1,%20gostaria%20agendar%20uma%20avalia%C3%A7%C3%A3o"
+            target="_blank"
+          >
+            <img
+              src="./img/botão 2.png"
+              alt="Botão Whatsapp"
+              class="img-btn-depoimento"
+            />
+          </a>
+        </div>
+      </section>
       <section class="quem-somos">
-        <div class="text-qs">
+        <div class="img-quem-somos">
+          <img src="./img/Doutora/doutora.jpeg" alt="Doutora Vanessa" />
+        </div>
+        <div class="text-quem-somos">
           <h2>QUEM SOMOS</h2>
           <p>
-            Dra. Vanessa Carvalho é formada desde 2012 pela Faculdade de Odontologia da  USP e com mestrado em Estomatologia (Ciência que estuda doenças da boca). Após anos de estudo e trabalho na área, se destaca por manter um atendimento humanizado e com o foco no bem estar dos pacientes, fatores que fazem parte dos valores da clínica Odonto&Corpo, onde são realizados todos os procedimentos que visam restabelecer sua saúde bucal, bem como procedimentos estéticos e preventivos. Atuamos em várias áreas da odontologia para oferecer tudo o que você precisa.
+            Dra. Vanessa Carvalho é formada desde 2012 pela Faculdade de
+            Odontologia da USP e com mestrado em Estomatologia (Ciência que
+            estuda doenças da boca). Após anos de estudo e trabalho na área, se
+            destaca por manter um atendimento humanizado e com o foco no bem
+            estar dos pacientes, fatores que fazem parte dos valores da clínica
+            Odonto&Corpo, onde são realizados todos os procedimentos que visam
+            restabelecer sua saúde bucal, bem como procedimentos estéticos e
+            preventivos. Atuamos em várias áreas da odontologia para oferecer
+            tudo o que você precisa.
           </p>
         </div>
-        <div class="img-qs"> <img    src="./img/Doutora/doutora.jpeg"  alt="" /></div>
-
       </section>
-   
-      <section class="local">
-        
-        <div>
-          <h2>Estamos a 200m do ponto final do Ônibus Jardim Redil</h2>
+      <section class="localizacao">
+        <h2>Estamos a 200m do ponto final do Ônibus Jardim Redil</h2>
+        <!-- anteriormente em uma div-->
+        <div class="maps">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.843926051054!2d-46.44423538560985!3d-23.538115284694477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce673ba8e3c507%3A0x723d033e154679be!2sOdonto%20%26%20Corpo!5e0!3m2!1spt-BR!2sbr!4v1665887666140!5m2!1spt-BR!2sbr"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <div class="img-clinica">
+            <img src="" id="clinic" alt="Fotos da Clinica" />
+          </div>
         </div>
-
-        <div class="maps-conteudo">
-          <div class="maps">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.843926051054!2d-46.44423538560985!3d-23.538115284694477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce673ba8e3c507%3A0x723d033e154679be!2sOdonto%20%26%20Corpo!5e0!3m2!1spt-BR!2sbr!4v1665887666140!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-           
-          </div>
-          <div class="img-local">
-            <img    src="" id="clinic"  alt="" />
-          </div>
-        </div> 
-        <a href="https://api.whatsapp.com/send?phone=5511910544849&text=Ol%C3%A1,%20gostaria%20agendar%20uma%20avalia%C3%A7%C3%A3o" target="_blank"> 
-          <img class="img-btn-maps" src="./img/WhatsApp-icone-3.png" alt="">  
-          <button class="button-dep" type="submit"> Agende agora com um especialista</button></a>
-           
       </section>
-
     </main>
-
     <footer>
       <div class="main-footer">
-        <div class="div-logo">
-          <img class="logo-rodape" src="./img/logo_branco-removebg-preview.png" alt="">
+        <div class="logo-footer">
+          <img
+            src="./img/logo_branco-removebg-preview.png"
+            alt="Logo"
+            class="logo-rodape"
+          />
         </div>
-        <div class="div-contatos">
-          <a href="https://www.facebook.com/dentistaemitaquera" target="_blank"><img src="./img/face.png" alt=""></a>
-          <a href="https://instagram.com/odonto.e.corpo?igshid=YmMyMTA2M2Y=" target="_blank"><img src="./img/instagram.png" alt=""></a>
-          <a href="" target="_blank"><img src="./img/whatsapp.png" alt=""></a>
+        <div class="contatos">
+          <a href="https://www.facebook.com/dentistaemitaquera" target="_blank"
+            ><img src="./img/face.png" alt=""
+          /></a>
+          <a
+            href="https://instagram.com/odonto.e.corpo?igshid=YmMyMTA2M2Y="
+            target="_blank"
+            ><img src="./img/instagram.png" alt=""
+          /></a>
+          <a href="" target="_blank"><img src="./img/whatsapp.png" alt="" /></a>
           <div class="direitos">
             <p>Contato: (11) 91054-4849</p>
             <!-- <p>Desenvolvido por</p> -->
           </div>
         </div>
       </div>
-      
-   
     </footer>
 
+    <script>
+      $(".card-depoimento").slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        mobileFirst: true,
+        responsive: [{ breakpoint: 800, settings: "unslick" }],
+      });
+
+      var arrClinic = [
+        "./img/Clinica/consultório.jpeg",
+        "./img/Clinica/consultório 2.jpeg",
+        "./img/Clinica/consultório 3.jpeg",
+        "./img/Clinica/consultório 4.jpeg",
+      ];
+      var cardClinic = document.getElementById("clinic");
+      var interval = 3000;
+
+      function slideclinic1() {
+        cardClinic.src = arrClinic[0];
+        setTimeout("slideclinic2()", interval);
+      }
+
+      function slideclinic2() {
+        cardClinic.src = arrClinic[1];
+        setTimeout("slideclinic3()", interval);
+      }
+
+      function slideclinic3() {
+        cardClinic.src = arrClinic[2];
+        setTimeout("slideclinic4()", interval);
+      }
+
+      function slideclinic4() {
+        cardClinic.src = arrClinic[3];
+        setTimeout("slideclinic1()", interval);
+      }
+    </script>
+
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <a href="https://api.whatsapp.com/send?phone=5511910544849&text=Ol%C3%A1,%20gostaria%20agendar%20uma%20avalia%C3%A7%C3%A3o" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
     z-index:1000;" target="_blank">
     <i style="margin-top:16px" class="fa fa-whatsapp"></i>
-    
-    <!-- <script src="slide.js"></script>   -->
-    <script src="slideclinic.js"></script> 
-    <!-- <script src="wpp.js"></script> -->
-   
   </body>
 </html>
