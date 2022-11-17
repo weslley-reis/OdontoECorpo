@@ -220,7 +220,6 @@ p {
 }
 
 .img-clinica > img {
-  /* height: 50vh; */
   width: 100%;
   object-fit: contain;
 }
@@ -245,13 +244,14 @@ footer {
 }
 
 .logo-footer > img {
-  width: 70%;
+  width: 65%;
   object-fit: contain;
 }
 
 .contatos {
   margin: 0 auto;
-  width: 50%;
+  width: 100%;
+  text-align: center;
 }
 
 .direitos {
